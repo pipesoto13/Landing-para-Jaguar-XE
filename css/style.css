@@ -17,6 +17,7 @@ html {
 }
 
 section {
+    box-sizing: border-box;
     max-width: 600px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 14px;
@@ -30,17 +31,22 @@ section h1 {
 
 section p {
     margin: 17px auto;
-    font-size: 1.1em;
 }
 
-section input {
+section a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     background-color:#DB3030;
-    width: 180px;
-    height: 45px;
     font-weight: 700;
-    font-size: 1.2em;
+    padding: 0.5em 1.8em;
     margin: 5px auto;
+}
+
+section a:focus,
+section a:hover {
+  background-color: FireBrick;
 }
 
 @media (min-width: 992px) {
